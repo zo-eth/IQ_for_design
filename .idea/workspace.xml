@@ -4,7 +4,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe213fff-1ca5-4523-ab97-f5a4d1e6242e" name="Changes" comment="check mark" />
+    <list default="true" id="fe213fff-1ca5-4523-ab97-f5a4d1e6242e" name="Changes" comment="check mark">
+      <change afterPath="$PROJECT_DIR$/assets/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/new_index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/IBMPlexMono-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/IBM_Plex_Mono/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Montserrat/static/Montserrat-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/ascii_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/eye_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/img_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/left_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/right_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/text_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html/sections/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/sections/main_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/brain.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/brain2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/coinlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/cursor2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gameimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gameui.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/girl.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/greenlogo 복사본.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/greenlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/hand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/image.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/mainlogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/mv.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/mvlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/pixellogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/poster.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +87,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -27,12 +100,12 @@
     &quot;assignee&quot;: &quot;sumin13245&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sumin13245/iq6900.git&quot;,
-    &quot;accountId&quot;: &quot;24e29b79-f196-4013-aca0-459e9139ecad&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/zo-eth/IQ_for_design.git",
+    "accountId": "24e29b79-f196-4013-aca0-459e9139ecad"
   }
-}</component>
+}]]></component>
   <component name="JsBowerSettings">
     <bower-package value="" />
     <bower.json value="" />
@@ -54,9 +127,10 @@
     "JavaScript Debug.onchain_code.html.executor": "Run",
     "Node.js.codeincontract.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sumin/IdeaProjects/iq6900-design",
+    "last_opened_file_path": "/Users/sumin/IdeaProjects/iq6900-design/assets/fonts",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,9 +147,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/fonts" />
       <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/music" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
@@ -211,7 +285,8 @@
       <workItem from="1737520252514" duration="6374000" />
       <workItem from="1737963987992" duration="896000" />
       <workItem from="1737964891882" duration="59000" />
-      <workItem from="1737965102161" duration="3134000" />
+      <workItem from="1737965102161" duration="3306000" />
+      <workItem from="1738223570012" duration="18613000" />
     </task>
     <task id="LOCAL-00001" summary="check mark">
       <option name="closed" value="true" />

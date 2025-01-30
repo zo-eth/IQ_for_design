@@ -1,0 +1,228 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, serif;
+    background-color: #000000;
+    scrollbar-width: none; /* Firefox */
+    color: white;
+    scroll-behavior: smooth;
+    font-size: 1.2vw;
+
+
+}
+
+.column_flex{
+    display: flex;
+    flex-direction: column;
+}
+.row_flex{
+    display: flex;
+    flex-direction: row;
+}
+.full_div{
+    width: 100vw;
+    padding: 1.2rem 3rem;
+    box-sizing: border-box;
+}
+.background_div{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu_bar {
+
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_button{
+    left: 0;
+    width: 13rem;
+    cursor: pointer;
+}
+.nav_icons{
+    gap: 1rem;
+    margin-right: 2rem;
+}
+.nav_icon{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.connect_button{
+    right: 0;
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: white;
+    font-family: Montserrat, serif;
+    background-color: rgba(255, 255, 255, 0.09);
+    border: rgba(255, 255, 255, 0.11) solid 0.2rem;
+
+}
+.connect_button:hover{
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu_list{
+    margin-top: 1.7rem;
+    margin-left: 0.5rem;
+    gap: 0.5rem;
+
+}
+.menu_list>a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.25;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+.menu_list>a:hover{
+    transition: opacity 0.3s ease-in-out;
+
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .background_div{
+        z-index: -2;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .background_dog_image{
+        display:flex;
+        position: relative;
+        margin-top: 19rem;
+        width: 55rem;
+    }
+    .background_Linear_color{
+        display:flex;
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+        background:linear-gradient(black, #192920 90%);
+    }
+
+    .full_div{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        padding: 2rem 9rem;
+        box-sizing: border-box;
+        align-items: center;
+        scrollbar-width: none; /* Firefox */
+    }
+    #section{
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .main_title{
+        width: 35rem;
+        margin-top: 14rem;
+        margin-bottom: 34rem;
+    }
+    .main_h1{
+        font-family: IBMPlexMono,monospace;
+        font-weight: lighter;
+        font-size: 7.2rem;
+        color: #00FF22;
+        text-align: center;
+        margin: 0 0 5rem;
+    }
+    .main_h2{
+        margin:0;
+        font-family: IBMPlexMonoLight,monospace;
+        font-size: 3.1rem;
+        text-align: center;
+        background: black;
+        box-shadow: 0 -4rem 3rem #000000;
+    }
+    .nav_icon{
+        width: 1.5rem;
+        cursor: pointer;
+
+
+    }
+    .nav_icons{
+        gap: 2.5rem;
+        z-index: 99;
+        opacity: 0.25;
+    }
+    .menu_list>a{
+        color: #91ffc5;
+        text-decoration: none;
+        opacity: 0.25;
+        font-size: 4rem;
+        width: fit-content;
+    }
+    .menu_list>a:hover{
+        opacity: 0.25;
+    }
+    .bottom_menu{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .green_button{
+        width: 100%;
+        height: 10rem;
+        background: linear-gradient(rgba(11, 78, 37, 0.7), rgba(8, 57, 34, 0.61));
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 2rem;
+        border: rgba(43, 213, 45, 0.1) solid 0.1rem;
+    }
+    .green_button > p{
+        font-size: 5rem;
+        margin:0;
+        padding:0;
+        color:#2BD52D;
+    }
+    .img_button{
+        width: 100%;
+        height: 10rem;
+        background: linear-gradient(rgba(25, 25, 25, 0.63), rgba(17, 17, 17, 0.7));
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 2rem;
+        border: #161616 solid 0.1rem;
+    }
+    .img_button >div{
+        height: 4.5rem;
+        gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .img_button >div> img{
+        height: 100%;
+        margin:0;
+        padding:0;
+    }
+    .img_button >div> p{
+        font-size: 4.5rem;
+        margin:0;
+        padding:0;
+        color:#989898;
+    }
+    .main_buttons{
+        width: 100%;
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+        gap: 4rem;
+    }
+}

@@ -2,21 +2,22 @@
     font-family: Consola;
     src: url('../fonts/consola.ttf') format('truetype');
 }
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
 
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Consola, monospace;
+    font-family: Montserrat, serif;
     background-color: #000000;
     scrollbar-width: none; /* Firefox */
-    color: #00ff22;
-    text-shadow: 0 0 0.5rem #00ff20;
     max-width: 100%;
+    color: white;
     scroll-behavior: smooth;
     font-size: 1.2vw;
-    overflow-x: hidden;
-    /*animation:In 3s alternate ;*/
 }
 
 .main_top_div {
