@@ -1,32 +1,47 @@
-<script type="text/javascript" src="js/codein_client.js?ver=20241217"></script>
-<script type="text/javascript" src="js/sections/pages/codein_section.js?ver=20241233"></script>
-<script type="text/javascript" src="js/sections/pages/check_section.js?ver=20241237"></script>
-<script type="text/javascript" src="js/sections/codein_init.js?ver=20241234"></script>
-<hr>
-<hr>
-<div style="padding:0 4rem 0 4rem;">
-    <div class="onchain_menu_div">
-        <div id="go_codein" class="onchain_menu_btn">
-            <p>Code-In</p>
-        </div>
-        <div id="go_check" class="onchain_menu_btn">
-            <p>Check-Code</p>
-        </div>
-        <div id="how_to_use" class="onchain_menu_btn">
-            <p>How-To-Use</p>
-        </div>
+<div class="background_div">
+    <div class="background_black"></div>
+    <div class="background_Linear_color"></div>
+</div>
+
+<div class="nav_bar row_flex">
+    <div class="row_flex">
+        <img class="nav_title" onclick="$.mainPage.init()" src="img/text_logo.svg" alt="iq6900">
+        <img class="nav_menu_arrow" src="img/down.svg">
     </div>
-    <div class="main_div" style="margin: 0;padding: 0;">
-        <div class="center">
-            <div style="
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: center;
-                                ">
-                <div id="web3_section">
-                </div>
-            </div>
+    <div class="nav_connect">
+        <div class="simple_button">
+            <p>Connect</p>
         </div>
     </div>
 </div>
+
+<div class="main_buttons row_flex">
+    <div class="img_button_green">
+        <div class="row_flex"><img src="img/gen_logo.svg">
+            <p>Code-In</p></div>
+    </div>
+
+    <div class="img_button">
+        <div class="row_flex"><img src="img/viewer_logo.svg">
+            <p>Viewer</p></div>
+    </div>
+</div>
+
+<section id="menu_section">
+
+    <div class="on_chain_page_buttons column_flex">
+        <div class="img_button">
+            <div class="row_flex"><img src="img/img_logo.svg">
+                <p>Inscribe Image</p></div>
+        </div>
+        <div class="img_button">
+            <div class="row_flex"><img src="img/text_icon.svg">
+                <p>Upload Text</p></div>
+        </div>
+        <div class="green_button" style="margin-top: 2rem">
+            <p>Code-In</p>
+        </div>
+    </div>
+    <p class="info" style="margin-bottom: 15rem">Expected gas fee ~0.03 SOL</p>
+
+</section>

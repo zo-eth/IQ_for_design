@@ -29,6 +29,7 @@ html, body {
     position: absolute;
     display: flex;
     width: 100vw;
+    left: 0;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -106,7 +107,15 @@ html, body {
         margin-top: 19rem;
         width: 55rem;
     }
+    .background_black{
+        display:flex;
+        position: relative;
+        width: 55rem;
+
+        background:black;
+    }
     .background_Linear_color{
+        position: relative;
         display:flex;
         bottom: 0;
         width: 100%;
@@ -119,12 +128,35 @@ html, body {
         flex-direction: column;
         position: absolute;
         width: 100vw;
-        padding: 2rem 9rem;
+        min-height: 100dvh;
+        padding: 0 9rem;
         box-sizing: border-box;
         align-items: center;
         scrollbar-width: none; /* Firefox */
     }
-    #section{
+    .nav_bar{
+        align-items: center;
+        justify-content: space-between;
+        height: 20rem;
+        width: 100%;
+    }
+    .nav_title{
+        width: 30rem;
+    }
+    .nav_connect{
+        width: 18rem;
+        height: 9rem;
+    }
+    .nav_menu_arrow{
+        width: 4rem;
+        margin-left: 2rem;
+    }
+    #main_section{
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    #menu_section{
         width: 100%;
         justify-items: center;
         align-items: center;
@@ -172,10 +204,16 @@ html, body {
         opacity: 0.25;
     }
     .bottom_menu{
+        border-top: #03140A solid 0.3rem;
         width: 100%;
+        box-sizing: border-box;
         justify-content: space-between;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
     }
+
     .green_button{
+        cursor: pointer;
         width: 100%;
         height: 10rem;
         background: linear-gradient(rgba(11, 78, 37, 0.7), rgba(8, 57, 34, 0.61));
@@ -190,6 +228,22 @@ html, body {
         margin:0;
         padding:0;
         color:#2BD52D;
+    }
+    .simple_button{
+        width: 100%;
+        height: 100%;
+        background: rgba(35, 35, 35, 0.4);
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 2rem;
+        border: rgba(33, 36, 33, 0.43) solid 0.1rem;
+    }
+    .simple_button > p{
+        font-size: 3rem;
+        margin:0;
+        padding:0;
+        color: #ffffff;
     }
     .img_button{
         width: 100%;
@@ -214,15 +268,57 @@ html, body {
         padding:0;
     }
     .img_button >div> p{
-        font-size: 4.5rem;
+        font-size: 4.2rem;
         margin:0;
         padding:0;
         color:#989898;
     }
+    .img_button_green{
+        width: 100%;
+        height: 10rem;
+        background: #03311A;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 2rem;
+    }
+    .img_button_green >div{
+        height: 4.2rem;
+        gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .img_button_green >div> img{
+        height: 100%;
+        margin:0;
+        padding:0;
+    }
+    .img_button_green >div> p{
+        font-size: 4.5rem;
+        margin:0;
+        padding:0;
+        color:#2BD52D;
+    }
+
+
     .main_buttons{
         width: 100%;
         margin-top: 6rem;
         margin-bottom: 8rem;
         gap: 4rem;
+    }
+    .on_chain_page_buttons{
+        width: 100%;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        gap: 4rem;
+    }
+    .info{
+        margin:0;
+        width: 95%;
+        text-align: left;
+        color: #444746;
+        font-size: 3rem;
     }
 }

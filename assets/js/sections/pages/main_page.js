@@ -25,9 +25,9 @@
         };
 
         function renderMainPageTemplate() {
-            $("#section").show();
-            $("#section").empty();
-            $("#section").append($mainPageElement);
+            $("#main_section").show();
+            $("#main_section").empty();
+            $("#main_section").append($mainPageElement);
         }
 
         $.extend(this, {

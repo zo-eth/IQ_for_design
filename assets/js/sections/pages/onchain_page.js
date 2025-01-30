@@ -25,9 +25,9 @@
         };
 
         function renderOnchainPageTemplate() {
-            $("#section").show();
-            $("#section").empty();
-            $("#section").append($onchainPageElement);
+            $("#main_section").show();
+            $("#main_section").empty();
+            $("#main_section").append($onchainPageElement);
         }
 
         $.extend(this, {
