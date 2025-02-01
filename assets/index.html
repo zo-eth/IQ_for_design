@@ -13,12 +13,18 @@
 
     <!--My js-->
     <script type="text/javascript" src="js/sections/pages/main_page.js?ver=20241233"></script>
-    <script type="text/javascript" src="js/sections/pages/onchain_page.js?ver=20241243"></script>
+    <script type="text/javascript" src="js/sections/pages/about_page.js?ver=20241245"></script>
+
+    <script type="text/javascript" src="js/sections/pages/onchain_page.js?ver=20241244"></script>
+    <script type="text/javascript" src="js/sections/pages/generate_page.js?ver=20241244"></script>
+
     <script type="text/javascript" src="js/navbar.js?ver=20241231"></script>
     <script type="text/javascript" src="js/init.js?ver=20241233"></script>
 
     <script type="text/javascript" src="js/check_contract.js?ver=20241233"></script>
-    <script type="text/javascript" src="js/codeincontract.js?ver=20241233"></script>
+    <script type="text/javascript" src="js/code_in_contract.js?ver=20241233"></script>
+    <script type="text/javascript" src="js/navigator.js?ver=20241233"></script>
+
 
     <title>IQ6900</title>
     <link rel="icon" href="img/dog.png"/>
@@ -46,7 +52,7 @@
                     <p >Launch App</p>
                 </div>
 
-                <div class="img_button">
+                <div class="img_button" onclick=" $.generatePage.init();">
                     <div class="row_flex"><img src="img/img_logo.svg">
                         <p>Art Generator</p></div>
                 </div>
@@ -86,5 +92,6 @@
 </div>
 
 </body>
+
 </html>
 

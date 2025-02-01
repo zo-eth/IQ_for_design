@@ -1,247 +1,169 @@
-<div id="check_code" style="display: none"></div>
-<div class="center" style="display:flex;flex-direction: column;">
-    <div id="main-load" class="center" style="display: none; flex-direction: column;">
-        <img style="width: 30rem; margin-top: 10rem;margin-bottom: 1rem;" src="img/pixellogo.gif">
-        <p class="check_load">Loading.....</p>
+<div class="main_buttons column_flex">
+    <div class="search_div ">
+        <input id="search" placeholder=" Enter: Txid or Wallet address" class="center"/>
     </div>
+    <div class="green_button" style="margin-top: 2rem;" onclick="test()">
+        <p>Check Record</p>
+    </div>
+</div>
+<div class="column_flex records">
+    <div class="records_list">
+        <p class="all_records_title">All records:</p>
+        <div class="transactions_div column_flex">
+            <div class="row_flex transaction_div">
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
 
-    <div class="before_check" style="padding-bottom: 3rem;padding-top: 3rem">
-        <img class="check_title_img" src="img/onchain.png" >
-        <div class="enter_transaction_result center" style="display:flex; flex-direction: column">
-            <div class="transaction_input_div">
-                <label>
-                    <input class="transaction_input" placeholder="Enter TXID or wallet address here.">
-                </label>
-                <div class="little_btn" onclick="transactionButton()">
-                    <a class="little_btn_text">Check</a>
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
+
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
+
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
+
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="transactions_div column_flex">
+            <div class="row_flex transaction_div">
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
 
-            <p class="check_or">or</p>
-            <button style="margin: 0;"
-                    class="gen_btn"
-                    type="button"
-                    value="button"
-                    onclick="transactionButton()">
-                <a>Connect Wallet</a>
-            </button>
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
+
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
+
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+
+                <div class="transaction" onclick="test('text')">
+                    <p class="sig_title">Sig:</p>
+                    <p class="signature">***e23wdw</p>
+
+                    <div class="transaction_bottom_div">
+                        <p class="date">01.26.2025</p>
+                        <img class="copy" src="img/copy_icon.svg" alt="copy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_flex page_menu">
+            <img src="./img/thin_left.svg" class="thin_arrow_button" style="opacity: 0.3"/>
+            <div class='page_num'>
+                <p class="current">1</p>
+                <p>/</p>
+                <p class="total_page">15</p>
+            </div>
+            <img src="./img/thin_right.svg" class="thin_arrow_button" />
         </div>
     </div>
-    <div class="after_check" style="display:none; flex-direction: column;padding-bottom: 3rem;padding-top: 3rem">
+    <div class="goto_all_records" onclick="back()"><p>All records</p></div>
+    <div class="record">
+        <pre class="coded_in_text">I woke up to the exciting news that Shaw had shared the IQ6900_ open letter to Solana, bringing attention from @aeyakovenko and @0xMert_.
+Thank you, Shaw, for sharing the tweet.
+Thank you, Toly and Mert, for noticing us.
 
-        <div class="transaction_input_check" style="display: none; flex-direction: column;">
-            <div class="asciidiv">
-                <div class="loading center" style="width: 40rem; height: 40rem; display: none; flex-direction: column">
-                    <img style="width: 30rem; margin-bottom: 4rem; margin-top: 4rem;" src="img/pixellogo.gif">
-                </div>
-                <pre id="ascii_text" class="on_chain_ascii"></pre>
+Lastly, I express my deepest gratitude to all of you who were the first to share this news with me and showed such enthusiasm about it.
+
+I respect you all.
+
+Now, this is just the beginning.
+Let's Code In the World.
+        </pre>
+        <pre class="coded_in_ascii"></pre>
+        <div class=" coded_page_bottom_menu">
+            <div class="row_flex coded_page_sig">
+                <p class="coded_page_sig_title">Sig:</p>
+                <p class="coded_page_tx_id">***e23wdw</p>
             </div>
-
-            <div class="center inputdiv">
-                <div style="display:flex; text-align: center">
-                    <label>
-                        <input class="transaction_input">
-                    </label>
-                    <div class="little_btn" onclick="transactionButton_in_result()">
-                        <a class="little_btn_text">Check</a>
-                    </div>
+            <div class="row_flex" style="gap: 2rem">
+                <div class="coded_page_link_menu">
+                    <img src="img/search_icon.svg">
+                    <p>Solscan</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="connect_check " style="display: none; flex-direction: column;">
-            <pre class="connect_check_title"> ______     __         __     ______     __  __        ______   __  __     __     _____        ______   ______        ______     __  __     ______     ______     __  __
-/\  ___\   /\ \       /\ \   /\  ___\   /\ \/ /       /\__  _\ /\_\_\_\   /\ \   /\  __-.     /\__  _\ /\  __ \      /\  ___\   /\ \_\ \   /\  ___\   /\  ___\   /\ \/ /
-  \ \ \____  \ \ \____  \ \ \  \ \ \____  \ \  _"-.     \/_/\ \/ \/_/\_\/_  \ \ \  \ \ \/\ \    \/_/\ \/ \ \ \/\ \     \ \ \____  \ \  __ \  \ \  __\   \ \ \____  \ \  _"-.
-   \ \_____\  \ \_____\  \ \_\  \ \_____\  \ \_\ \_\       \ \_\   /\_\/\_\  \ \_\  \ \____-       \ \_\  \ \_____\     \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\
-    \/_____/   \/_____/   \/_/   \/_____/   \/_/\/_/        \/_/   \/_/\/_/   \/_/   \/____/        \/_/   \/_____/      \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_/\/_/
-                                                                                                                                                                            </pre>
-            <div class="connect_check_content" >
-                <div class="wallet_ascii_div">
-                    <div class="loading center" style="width: 60rem; height: 40rem; display: none">
-                        <img style="width: 20rem; margin-bottom: 4rem; margin-top: 4rem;" src="img/pixellogo.gif">
-                    </div>
-                    <div class="text_div">
-                        <p>your text: </p>
-                        <pre class="on_chain_text"></pre>
-                    </div>
-                    <div class="image_div" style="width: 60rem;">
-                      <pre class="on_chain_ascii" style="letter-spacing: 0.28em; line-height: 90%;"></pre>
-                    </div>
-                </div>
-                <div class="transaction_page_button">
-                    <p class="before_list"><-Before</p>
-                    <p>Your transaction list</p>
-                    <p class="after_list">After-></p>
-                </div>
-                <div class="transactions_div">
+                <div class="coded_page_link_menu">
+                    <p>Share</p>
+                    <img src="img/share_icon.svg">
                 </div>
             </div>
-        </div>
-
-        <div class="center" style="display:flex; flex-direction: column;">
-            <a class="sol_scan">
-                Sol Scan</a>
-
-            <button style="margin: 0;"
-                    class="x_btn gen_btn center"
-                    type="button"
-                    value="button">
-                <a>Share This Data to X</a>
-            </button>
-
-            <button style="margin: 0; display: none"
-                    class="x_my_wallet_btn gen_btn center"
-                    type="button"
-                    value="button">
-                <a>Share My Collection</a>
-            </button>
-
         </div>
     </div>
 </div>
 
+<script>
+    function test(menu = '') {
+        if (menu === '') {
+            menu = $("#search").val();
+        }
+        if (menu === "plain_text") {
+            $(".records_list").css("display", "none");
+            $(".record").css("display", "flex");
+            $(".coded_in_text").css("display", "flex");
+        } else if (menu === "list") {
+            $(".coded_in_text").css("display", "none");
+            $(".record").css("display", "none");
+            $(".records_list").css("display", "flex");
+        } else if (menu === 'text') {
+            $(".records_list").css("display", "none");
+            $(".record").css("display", "flex");
 
+            $(".goto_all_records").css("display", "flex");
+            $(".coded_in_text").css("display", "flex");
+        }
+    }
 
-<pre id = "test_ascii" style="visibility: hidden; width: 0;height: 0;">IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIiiiiiiiIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIii::::::iiIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIiii::::'''''':iIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIIIIi'iI$$$$$$$$$II::':iIIIIIIIIIIIIIIIIIIIIIIIIIIIIIiiiiiIIIIIIIIii:::'   :IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIII:':i$$$$$$$$$$$JIIIJ$$I'':iIIIIIIIIIIIIIIIIIIIIIIIiIIII$$$$$$$$$JJIIIIiii:' 'iIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIII: :i$$$$$$$$$$$$$$$$IJJJJIJi:''iIIIIIIIi::::'''':::IJ$$$$$$$$$$$$$$$$$$$$JIIIi'' :IIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIi 'iJ$$$$$$$$$$$$$$$$$$$$$$III$$I:':i::'''''''''''''''':i$$$$$$$$$$$$$$$$$$$$$$JI:'  iIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIII' ::$$$$$$$$$$$$$$$$$$$$$$$$JJJI:::''''''''''''''''''''''''':I$$$$$$$$$$$$$$$$$$$$$I'' 'IIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIII' :I$$$$$$$$$JJ$$$$$$$JJJ$JJ$I'''''''''''''''''''''''''''''''''':I$$$$$$$$$$$$$$$$$$$$i'  iIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIi'':$$$$$$$$$J$JJJ$$JJ$$JJJJJI'''''''''''''''''''''''''''''''''''''''::$$$$$$$$$$$$$$$$$$I'  :IIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIII:''i$$$$$$$JJJJJJJJ$IJJJ$JJJJ:'''''''''''''''''''''''''''''''''''''''''':'$$$$$$$$$$$$$$$$$$:  :IIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIII::'i$$$$$$JIIIIIIIIIIIJIIJIII:''''''''''''''''''''''''''''''''''''''''''''''I$$$$$$$$$$$$$$$$$'  :IIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIi: iI$$$$JII$IIIIIIIIIIIIIIIi:'''''''''''''''''''''''''''''''''''''''''''''''''J$$JJJJJJ$$$$$$$$' 'iIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIII''''$$$JIIII$IIIIIIIIIIIIIIi:'''''''''''''''''''''''''i$$'''''''I:''''''''''''':JJJJJJJJJJJ$$$$$I' 'IIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIII :''$$$JIIIII$$IIIIIIIIIIIIi:''''''''''''''''''iJ$'''''$$$:'''''$$$$$''''::''''''IIIIIIJIIIIJJ$$$J'  'IIIIIIIIIIIIIIIIIIII
-IIIIIIIIIII:i :iJJIIIIII$$$$$$IIIIIIIII:'''''''''''''':'''$$$$:''''$$$$'''''$$''$$'''i$I''''''IIIIIIIIIIIIJ$$$$' ':IIIIIIIIIIIIIIIIIII
-IIIIIIIIIII':' IIIIII$$$$$$$$IIIIIIIII::'''''''''''$$$$:''$$$$''''I$$$$$''':$$''':'''$$$''''''iIIIIIIIIIIIII$$$'  :IIIIIIIIIIIIIIIIIII
-IIIIIIIIII:i ':IIIIiiii$$$$$iiiiiiiii:'''''''''''''$$$$$:J$$$$''''$$I'$$:'''$$''$Ii''$$$i''''''IIIIIIIIIIIIIIJ$$' :'IIIIIIIIIIIIIIIIII
-IIIIIIIIII :  $IIiiiiii$$$$$iiiiiiiii:''''''''''''''I$$$$$$:$$''''$$$$$$$'''$$:'$$$''$$:$''''''IIIIIIIIIIIIIIIJ$' ':IIIIIIIIIIIIIIIIII
-IIIIIIIII::'  IIiiiiiii$$i$$iiiiiiiii'''''''''''''''i$$:$$''$$''''$$:''$$$''$$$''$$''$$$$:'''''$$$$$$$$JIIIiiIII'' I'IIIIIIIIIIIIIIIII
-IIIIIIIII :  'Iiiiiiii$Iii:$iiiiiiii:''''''''''''''':$$''I''$$'''I$$I'i$$$$''$$$$$$i'$$'i$''''':$$$$$$$$$$$$$$$$I''i:IIIIIIIIIIIIIIIII
-IIIIIIIIi':  'ii::::i:i::i::i:iiiiii:''''''''''''''':$$''''$$$$:J$$$$''$$JI'''I$$$$$:$$$'$:'''''$$$$$$$$$$$$$$$$$::I$'IIIIIIIIIIIIIIII
-IIIIIIII':'  'i::::::::::::::::::::::''''''''''''''''$$$'''$$I:''''''''''''''''''''''':I'$$:''''$$$$$$$$$$$$$$$$$::I$'IIIIIIIIIIIIIIII
-IIIIIIII i'  '$::::::::::::::::::::i''''''''''''''''$$$$'''''''''''''''''''''''''''''''''''i'''''$$$$$$$$$$$$$$$$::I$I:IIIIIIIIIIIIIII
-IIIIIIII'i'   $::::::::::::::::::::$:''''''''''''''':''''''''''''''''''''''''''''''''''''''''''' $$$$$$$$$$$$$$$I:::$$ IIIIIIIIIIIIIII
-IIIIIII::I   '$''':::::::::::::$$$$$'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' $$$$$$$$$$$$$$J::''$$'IIIIIIIIIIIIIII
-IIIIIII'i$ '':$$$J:::::::::::::'J$$$'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' IJJ$$$$$$$$$$$$':::$$IIIIIIIIIIIIIIII
-IIIIIII I$ :::i$J'::::::::::::::':$$'''''''''''''''''''''''''''' '''''''''''''''''''''''''''''''::::::::::::::':   'J$JiIIIIIIIIIIIIII
-IIIIIII'$i  ::'$':::'::::::::::::'$$''''''''''''''''''''''  ''''''''''''''''''''''''''''''''''''::::::::::::::'     '$$:IIIIIIIIIIIIII
-IIIIIIi:$'  :::i'''':':''':':::::i$$''''''''''''''''''  ''''''''''''''''''''''''''''''''::''''''::::::::::::'::      $J'IIIIIIIIIIIIII
-IIIIIIi:$   '  'i''''''''''''''''$$''''''''''''''''' '''''''''''''''''''''''''''''''''''':::::'' :'::':'''''':       $I'IIIIIIIIIIIIII
-IIIIII::$  :    :'''''''''''''''':'''''''''''''''' '''''''''''''''''''''''''''''''''''''''''::::''''''''''''''       $I'IIIIIIIIIIIIII
-IIIIII':$         ''''''i'''''''''''''''''''''' '''''''''''''''''''''''''''''''''''''''''''''''::''''''''''''        $I'IIIIIIIIIIIIII
-IIIIII':$          '''''$'''''''''''''''''''' ''''''''''''''''''''''''''''''''::::::::::::ii'''''::'''''''''         $I'IIIIIIIIIIIIII
-IIIIII :$           ''''$:''''''''''''''''''''''''''''''''''''''''''''''' :iiii::::::'::::iii:''''':iii:::'          $:'IIIIIIIIIIIIII
-IIIIII 'I            '':J$'''''''''''''''Ii'''''''''''''''''''''''''''':iii:::i:iii:::'::iii::'  J''':$$JI:::::::::''$i IIIIIIIIIIIIII
-IIIIII 'i           ii$$J$$$$I'''''''''':Ii:'''''''''''''''''''''''':iiiiiiiiiiii:ii::':::iiii'' $$''''Jii:::::::''''$: IIIIIIIIIIIIII
-IIIIII ''            iiJJ$$$'''''''' '''iIii''''''''''''''''''''''iIiiiiiiIiii:::::i:'':::iii:' $$$$J''':ii::::::''''J' IIIIIIIIIIIIII
-IIIIII  '             iiI$$'''''''''''''iIiii'''''''''''''''''''IIiiiiIIiIii::::i::::'::::iii:'$$$$$$I''':i:::::::'''I' IIIIIIIIIIIIII
-IIIIII  '             iiII$'''''''''''''Iiiiii'''''''''''''' :i:iiiiiiiiiIi::::':::i:::::::i::'$$$$$IIIi:ii:::::::'''i' IIIIIIIIIIIIII
-IIIIII                II $I  ''''''''''':iiiii:''''''''''' ::':::iiiiii:i:''''::iiii:::::::ii::$$$JIIIIiiii::::::':'':' IIIIIIIIIIIIII
-IIIIII               'I   I:   '''''''''ii:i:::::''''''':ii:::::::::iii::':::iii:iii:::':::i::'$$$$$JIIIIiii:::::''''' 'IIIIIIIIIIIIII
-IIIIII               '     :     '''''':i::i::::::::ii:iIIii:::ii:::iii::'':: ' '':'::'':'::i'''''''                '  iIIIIIIIIIIIIII
-IIIIII:      '                     '''':i::::::::::::i::  i ''i:::::iii::'i':''':::'::::'':::'' '''''''             '  IIIIIIIIIIIIIII
-IIIIIIi      :                     ':'':::::::::::::::'''  'I:::i:::iii:::::::IiIiii::::'':::''' ''''''                IIIIIIIIIIIIIII
-IIIIIII      :                     '::'::':::::::::::'iiiiIIIiiii::::ii:::::iIIIiiiiii:''':::''  ''''''''              IIIIIIIIIIIIIII
-IIIIIII     ':                     '':'':'::::::::ii::iiiiIJIIii:::iiiii::::iiiii:iiii:::''::'' ''''''''              'IIIIIIIIIIIIIII
-IIIIIII   ''':::ii             $$$$ ':'':':i:::::i::iiiiiiiiiii:::::iiiii:::::iiiiiiii::''':''' ''''''''              :IIIIIIIIIIIIIII
-IIIIIII'  '':::::               :$$' i::'i:::i::::iiiiiiiiiiiii:ii::iiiii::::i:iiiiiii::''':'''' '''''''              IIIIIIIIIIIIIIII
-IIIIIII'   ':::'                  $i'::::i:::i:i:iiiiiiiiiiiii::iii:iiiii:::::iiIIiiii::''::'''' '''''                IIIIIIIIIIIIIIII
-IIIIIIII   ::::'                 '$$''::ii:::ii::iiiiiiiiiIiiiiiiii::iiii:::iiiiiIiii:::''::'''  $$$$JIIIIiiii::::''' IIIIIIIIIIIIIIII
-IIIIIIII   :' ::                 $$I' i:iii::iii:iiiiiiiIiiiIiiIii:::iiii:::iiiiiiii::::'':::'   $$$JIIIIiiiii:::::'''IIIIIIIIIIIIIIII
-IIIIIIIIi' '   :                 $   ':iIii:iiiii:iiiiiiiiiiIiIii:::::iiii::iiiiiii:::::''':::i:$$$$JJIIIiiii::::':' iIIIIIIIIIIIIIIII
-IIIIIIIIII                      '     'iIiiiiiiiii:iiiiiiIiIIIIIi::::iiii::::iiiiii:::''''i:i:$$$$$$$JIIIiiii::::::' IIIIIIIIIIIIIIIII
-IIIIIIIIII  '                          iiii:iiiiii:i:ii:iiiiiiII::::iIIJI::::iiiii::::::''II:I$$$$$$JJIIIiiii::::i:''IIIIIIIIIIIIIIIII
-IIIIIIIIII  '                          iiiii:iiiii:::::::iiiiiii::::iiiI::'::::ii:::::::''II:$$$$$$$JJIIIiiii::::i' IIIIIIIIIIIIIIIIII
-IIIIIIIIII' ''                         ::iiIiiiiii::::::::iiiii:i:' :::::'''ii:iii:::'::''ii:$$$$$$$$JIIIiiiii::i:' IIIIIIIIIIIIIIIIII
-IIIIIIIIIII ''                          i:IIi:i:iiiii::::iiiii::i:'''':'''::iiii:i:::::'''ii$$$$$$$JIIIIiii::::'i:':IIIIIIIIIIIIIIIIII
-IIIIIIIIIII  ''        ''''''''''''''''':iiii:iiii:ii:::::::ii:iii::ii::::::iiiii::::::'''i'''''''''''''       ':' IIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIi ''       '''''''''''''''''' i:iiiiiii::::::::iiii:iIi:::iIii:::iiiii:::::::''''''''''''''''       :'':IIIIIIIIIIIIIIIIIII
-IIIIIIIIIIII '':       ''''''''''''''''''':iii:ii:i:ii:::i:ii:iiii::iiiiiii::iiii:::::::''''''''''''''''      ::' IIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIII' ':       ''''''''''''''''''':''':i:::::::::iiiiiiiii:iiii::iii:iiiii::::::'''''''''''''''       ::''IIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIII ':i      ''''''''''''''''''''''::i::::::::iiiiiiii::i:iiii:::i:iiiii::::::'''''''''''''''      ::' IIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIII' ':'     ''''''''''''''''''''''::::::::i:::iiiiiii:::i:'''::':::iii::::::''''''''''''''''      i:''IIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIII ':i     '''''''''''''''''''''::::::::::::i:iiiiii:::'IJIJJII'::i:i:::::''''''''''''''''      i:' IIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIII:':i:      '''''''''''''''''''':::::::::i:iiiiiii:::'IJJJJJII':iiiiii::::''''''''''''''      'i:''IIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIII :IJ:iiiIIIIJ$$$$$$$$$$$$$$''':::::::::::iiiiiiii:'  'i:''  ':iiiii::::'''i$$$$$$$$JIIIIiii:$I: IIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIII''iI$:iiiIIIIJ$$$$$$$$$$$$$' '':::::::::::iiiiiii:'::::::::: :iiiii::::'':'i$$$$$$JIIIIIiiiJIi':IIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIII 'iJiiiIIIIIJ$$$$$$$$$$$$$::ii::::::::::iiiiiiii:':iI:I:i::':iiiii:::'''i 'I$$$$$JJIIIIii:JI: IIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIII: :I$:iiIIIIJJ$$$$$$$$$$$$':ii:'::::::::iiiiiiii':I:J:IiI:''iiiii::::'''J'':$$$$$JIIIIii:$Ii'iIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIII 'iI$:iIIIIIJ$$$$$$$$$$$: :iii:::::::::iiiiiiiii'::::::::i:Iiiiii:::''$$: 'i$$$JIIIIIiiJJI''IIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIII 'IJI:iIIIIJJ$$$$$$$$$I' :iii::::::::::iiiiiii$''':::':i::iiiiii:::''$$I ''I$$JIIIIiiiJI: IIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIII: :I$:iiIIIIIJ$$$$$$$I'  :iiii::::::::iiiiiiiii:iI$$J$JI:::ii:i::::''$$I''''IIIIIIii:$Ji IIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIII' iiI '''''':::::ii:'   :iiIi'::::::i:iiiiiii:i:IJIIJIi:i:i::i::::'J$$J:'''''''''''Iii'iIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIII 'iii    '''''''''     'iiiII::::::::iiiiiii::::iiii::'::i:ii::i:'$$$J:'''  '    :ii':IIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIII 'ii:    ''''''       'iiIII'::::::ii:iii:ii:i'::::::i::i:ii::::'$$$J:''''     'ii:'IIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIII' :ii'    '''         'iiIIII'::::iii:iiiiii'ii::ii:i::::ii::i::'$$$J:''''    'ii: IIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIII' :ii                'iIIIII:':::iii:iiiiiii'iIiiIi:'iiiii::i::i$$$J:'''''   '': IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIII  iiI                :IIIIII'':::ii::iiiiiii:'':'::iiiiii::i:'$$$$I''''''  ' ' ':iIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIII ':''               :IIIIIIi':::iii::iiiiiii:::::iiiiiii:ii:'$$$$I''''''   '' ''':iIIIIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIIi                   :IIIIIII''::iii::iiiiiiiiiiiiiiiiiii:i::$$$$$I'''''''  ''''''''':iIIIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIIIi'                   'iIIIIIII''::ii::iiiiiiiiiIIIii:iii:ii:'$$$$$i'''''''' ''''''''''':iIIIIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIIIIi'                     'iIIIIIIII''::ii::iiiiiiiiiiIiiiiii'i:::$$$$$i''''''''  '''''''''''':iiIIIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIIIIi:''                      'iIIIIIJIII':::i:':iiiiiiiiiiI:iii:i::'$$$$$J:''''''''' ''''''''''''''':iIIIIIIIIIIIIIIIII
-IIIIIIIIIIIIIIIi:''                          :IIIIIJIIJI':::i:'::ii:::iiii:ii::::'$$$$$$I:''''''''''''''''''''''''''':iIIIIIIIIIIIIIII
-IIIIIIIIIIIIi:''                             :IIIJJJJJJJi::::::':::::i::::i:''::'$$$$$$$I:'''''''''''''''''  '''''''''':iIIIIIIIIIIIII
-IIIIIIIIIi:''                                'IIJJJJJJJI' ':::::':'::::::::'::'I$$$$$$$$I:'''''''''''''''  '''''''''''''':iIIIIIIIIIII
-IIIIIIi:''                                   'IIJJJJJJI:'' '::::::'':::'''::''$$$$$$$$$$I:'''''''''''''  '''''''''''''''''':iIIIIIIIII
-IIIi:''                                      'IIJJJJ$Ji::''  '::'':::::::''::I$$$$$$$$$$I:'''''''''''''''''''''''''''''''''''':iIIIIII
-Ii:'                                         'iIJJJ$Jiiii:''   'iii:'''::IIi::I$$$$$$$$$I:''''''''''''''''''''''''''''''''''''''':iiII
-''                                           ':IJJ$$IIIIii:'    ''''''''J$$$Ii:I$$$$$$$$I:''''''''''''''''''''''''''''''''''''''''''::
-                                             ''IIJJ$J$JJIii:'   ''''''''$$$$$$Iii$$$$$$$I'''''''''''''''''''''''''''''''''''''''''''''
-                                             ''iJJ$$$$$$JIi:''   '''''''$$$$$$$$II$$$$$$I'''''''''''''''''''''''''''''''''''''''''''''
-                                             ''iJ$$$$$$$$$Ii:'   '''''':$$$$$$$$$$IJ$$$$I'''''''''''''''''''''''''''''''''''''''''''''
-                                             ''iI$$$$$$$$$$Ii:   '''''':$$$$$$$$$$$$$$$$I'''''''''''''''''''''''''''''''''''''''''''''
-                                             ''I$$$$$$$$$$$Ii:'  '''''':$$$$$$$$$$$$$$$$I'''''''''''''''''''''''''''''''''''''''''''''
-                                             ''i$$$$$$$$$$$JIi' '''    :$$$$$$$$$$$$$$$$I'''''''''''''''''''''''''''''''''''''''''''''
-                                             '':$$$$$$$$$$$JIi' '''' '':$$$$$$$$$$$$$$$$i'''''''''''''''''''''''''''''''''''''''''''''
-                                             '''$$$$$$$$$$$$Ii'  '''''':$$$$$$$$$$$$$$$$:'''''''''''''''''''''''''''''''''''''''''''''
-                                             '''$$$$$$$$$$$$II'  '' ''':$$$$$$$$$$$$$$$$:'''''''''''''''''''''''''''''''''''''''''''''
- '                                            ''I$$$$$$$$$$$JI'  '' ''''$$$$$$$$$$$$$$$$:'''''''''''''''''''''''''''''''''''''''''''''
- '                                            ''i$$$$$$$$$$$Ji'  '''''''I$$$$$$$$$$$$$$$''''''''''''''''''''''''''''''''''''''''''''''
- '                                            '':$$$$$$$$$$$Ji   ''''''':$$$$$$$$$$$$$$J''''''''''''''''''''''''''''''''''''''''''''''
- '                '                           '':$$$$$$$$$$$J:   ''''''':$$$$$$$$$$$$$$I''''''''''''''''''''''''''''''''''''''''''''''
- '                                            '''$$$$$$$$$$$J'  '''''''''J$$$$$$$$$$$$$I''''''''''''''''''''''''''''''''''''''''''''''
- '                                            '''J$$$$$$$$$$I'  '''''''''i$$$$$$$$$$$$$i''''''''''''''''''''''''''''''''''''''''''''''
-                                              '''I$$$$$$$$$$i   ''''''''''$$$$$$$$$$$$$:'''''''''''''''''''''''''''''''''''''''''''''
-                                              ''':$$$$$$$$$$'  '''''''''''J$$$$$$$$$$$$:'''''''''''''''''''''''''''''''''''''''''''''
-                                               '''$$$$$$$$$I'  '''''''''''i$$$$$$$$$$$$''''''''''''''''''''''''''''''''''''''''''''''
-                                               '''$$$$$$$$$i   ''''''''''':$$$$$$$$$$$I''''''''''''''''''''''''''''''''''''''''''''''
-                                               '''I$$$$$$$$'   ''''''''''''$$$$$$$$$$$i''''''''''''''''''''''''''''''''''''''''''''''
-                                               '''i$$$$$$$J'  '''''''''''''J$$$$$$$$$$:''''''''''''''''''''''''''''''''''''''''''''''
-                                                '':$$$$$$$i   '''''''''''''I$$$$$$$$$$''''''''''''''''''''''''''''''''''''''''''''''
-                                                '''$$$$$$$:   ''''''''''''':$$$$$$$$$J''''''''''''''''''''''''''''''''''''''''''''''
-                                                '''I$$$$$$'   ''''''''''''':$$$$$$$$$I'''''''''''''''''''''''''''''''''''''''''''''' '
-                                                '''I$$$$$$'   ''''''''''''':$$$$$$$$$:'''''''''''''''''''''''''''''''''''''''''''''' '
-                              '                  '':$$$$$I'   ''''''''''''''$$$$$$$$$''''''''''''''''''''''''''''''''''''''''''''''' '
-</pre>
+    function back() {
+        $(".coded_in_text").css("display", "none");
+        $(".goto_all_records").css("display", "none");
 
-<pre id = "test_txt" style="visibility: hidden; width: 0;height: 0;">long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text long text
-long text long text long text long text long text long text long text long text long text
-long text long text long text long text long text long text long text long text long text long text
-long text long text long text long text long text long text long text long text
-long text long text long text long text long text long text long text long text</pre>
-
+        $(".records_list").css("display", "flex");
+    }
+</script>

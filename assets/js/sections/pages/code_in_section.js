@@ -25,9 +25,9 @@
         };
 
         function renderCodeInSectionTemplate() {
-            $("#web3_section").show();
-            $("#web3_section").empty();
-            $("#web3_section").append($codeInSectionElement);
+            $("#menu_section").show();
+            $("#menu_section").empty();
+            $("#menu_section").append($codeInSectionElement);
         }
 
         $.extend(this, {

@@ -1,0 +1,131 @@
+<div class="background_div">
+    <div class="background_black"></div>
+    <div class="background_Linear_color"></div>
+</div>
+
+<div class="nav_bar row_flex">
+    <div class="row_flex">
+        <img class="nav_title" onclick="$.mainPage.init()" src="img/text_logo.svg" alt="iq6900">
+        <img class="nav_menu_arrow" onclick="navigator_on()" src="img/down.svg">
+    </div>
+    <div class="nav_connect" onclick="$.onchainPage.init()">
+        <div class="simple_button_green">
+            <p>App</p>
+        </div>
+    </div>
+</div>
+<div class="navigator_menu">
+    <div class="navigator_menu_list column_flex">
+        <a href="https://docs.google.com/document/d/1yaZcpEFZ7gMmhZxuzQpoW5QzIG_hZsqWnFnujKMP4M8/edit?tab=t.0"
+           target="_blank">WhitePaper</a>
+        <a onclick="$.aboutPage.init()">
+            About $IQ</a>
+        <a href="https://iq6900.gitbook.io/iq6900" target="_blank">How to use</a>
+        <a style="visibility: hidden;">Hidden Space</a>
+
+        <a href="https://linktr.ee/IQ6900" target="_blank">Community</a>
+        <a href="https://drive.google.com/drive/folders/1UlXr8WzTECgxWKgV6ixR3TXg7lzEA_W5?usp=sharing"
+           target="_blank">BrandKit</a>
+        <a href="https://linktr.ee/IQ6900Docs" target="_blank">Docs</a>
+
+        <a style="visibility: hidden;">Hidden Space</a>
+
+        <a href="https://x.com/im_zo_sol" target="_blank">Contact Us</a>
+        <a onclick="alert('Coming soon')">Partners</a>
+        <a onclick="alert('Coming soon')">Legal & Privacy</a>
+    </div>
+    <div class="row_flex nav_icons navigator_menu_icons" style="margin-top: 5rem">
+        <img src="img/telegram.svg" alt="Telegram">
+        <img src="img/x.svg" alt="X">
+        <img src="img/github.svg" alt="Github">
+    </div>
+</div>
+
+<div class="img_button" style="background: #03311A;">
+    <div class="row_flex"><img src="img/img_logo.svg">
+        <p style="color: #2BD52D">Art Generator</p></div>
+</div>
+
+<div class="upload_image">
+    <div class="contents_input">
+        <img src="img/img_logo_white.svg">
+        <p>Select Image</p>
+    </div>
+    <div class="gen_menus row_flex" style="gap:3rem; margin-top: 2rem;margin-bottom: 2rem;">
+        <div class="gen_menu row_flex center">
+            <p class="info" style="font-size: 2.8rem; margin: 0 2rem 0 0;">Font size:</p>
+            <div class="row_flex center">
+                <input type='button'
+                       class="arrow_button left_arrow"
+                       onclick="
+                       const number = parseInt($('.input_number').val());
+                       if(number>5)
+                       $('.input_number').val(number-1)
+                        "
+                />
+
+                <input type="number" class='input_number' min="5" max="50" value="8" readonly>
+
+                <input type='button'
+                       class="arrow_button right_arrow"
+                       onclick="
+                       const number = parseInt($('.input_number').val());
+                       if(number<50)
+                       $('.input_number').val(number+1)
+                        "
+                />
+            </div>
+        </div>
+        <div class="gen_menu row_flex center">
+            <p class="info" style="font-size: 2.8rem; margin: 0 2rem 0 0;">Distance:</p>
+            <div class="row_flex center">
+                <input type='button'
+                       class="arrow_button left_arrow"
+                       onclick="
+                       const number = parseInt($('.input_number').val());
+                       if(number>-50)
+                       $('.input_number').val(number-1)
+                        "
+                />
+
+                <input type="number" class='input_number' min="-50" max="50" value="-2" readonly>
+
+                <input type='button'
+                       class="arrow_button right_arrow"
+                       onclick="
+                       const number = parseInt($('.input_number').val());
+                       if(number<50)
+                       $('.input_number').val(number+1)
+                        "
+                />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="check_div">
+    <p class="check_title">Logo:</p>
+    <input type="checkbox" id="checkbox"/>
+    <label class="check" for="checkbox"></label>
+</div>
+<div class="before_gen" style="width: 100%">
+<div  class="green_button" onclick="generate()" style="margin-top: 5rem">
+    <p>Generate</p>
+</div>
+</div>
+<div class="after_gen">
+    <div  class="green_button" style="margin-top: 5rem;background: #161616; border:  #161616 solid 0.1rem;">
+        <p style="color: #989898">Re-Generate</p>
+    </div>
+
+    <div class="img_button" style="background: #03311A;">
+        <div class="row_flex"><img src="img/gen_logo.svg">
+            <p style="color: #2BD52D">Download</p></div>
+    </div>
+</div>
+<script>
+    function generate(){
+        $('.before_gen').css('display','none');
+        $('.after_gen').css('display','flex');
+
+    }
+</script>
