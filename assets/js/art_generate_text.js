@@ -103,20 +103,11 @@ function Check_input(x) {
         return null;
     }
 }
-async function move_type_section() {
-    $(".gen_setting").css("display", "none");
-    $(".type_in_setting").css("display", "flex");
-}
-async function type_done() {
-    $("#text_input").attr("readonly", true);
-    $("#text_in_button").css("display", "none");
-    $(".code-in-div").css("display", "flex");
-    
-}
+
 
 async function Generate_image_client() {
     const outputHeight = 800;
-    const fileInput = document.getElementById("imageUpload");
+    const fileInput = document.getElementById("imageUpload_For_Text");
 
     const file = fileInput.files[0];
     if (!file) {
@@ -124,7 +115,7 @@ async function Generate_image_client() {
         return;
     }
 
-    const sizeValue = Check_input($("#font_input").val());
+    const sizeValue = Check_input($(".font_input").val());
 
     if (sizeValue === null) {
         alert("Please enter valid numeric values between 5 and 50.");
@@ -140,12 +131,16 @@ async function Generate_image_client() {
 
         img.onload = function () {
             imgToAsciiArt(img.src, sizeValue, outputHeight).then((result) => {
-                const fontsize = $(".asciidiv").width()/parseInt(result.width);
+                $(".contents_input").css("display", "none");
+                $(".generate_result").css("display", "block");
+                const fontsize = $(".upload_image").width()/parseInt(result.width);
+
                 $("#asciiWidth").text(result.width);
-                $(".on_chain_ascii").css("font-size", fontsize.toString()+"px");
-                $(".on_chain_ascii").text(result.relult);
-                $(".gen_setting").css("display", "none");
-                $(".code_in_setting").css("display", "flex");
+                $(".generate_result_txt").css("font-size", fontsize.toString()+"px");
+                $(".generate_result_txt").text(result.relult);
+
+
+
 
             }).catch((error) => {
                 console.error('Error processing image:', error);
