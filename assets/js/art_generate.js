@@ -1,11 +1,5 @@
 document.getElementById("imageUpload").addEventListener("change", function () {
-    var fileName = this.files[0].name;
-    var fileNameElement = document.querySelector(
-        ".custom-file-upload .file-name",
-    );
-    if (fileNameElement) {
-        fileNameElement.textContent = fileName;
-    }
+    Generate_image()
 });
 
 function Check_input(x) {
@@ -19,7 +13,7 @@ function Check_input(x) {
         return null;
     }
 
-    if (num >= -30 && num <= 30) {
+    if (num >= -50 && num <= 50) {
         return num;
     } else {
         return null;
@@ -30,6 +24,11 @@ function Generate_image() {
     const fileInput = document.getElementById("imageUpload");
     const file = fileInput.files[0];
 
+    $(".file-name").text("Loading...");
+    // 텍스트 박스 readonly 처리
+    $("#imageUpload").attr("disabled",true);
+
+
     if (!file) {
         alert("Please select an image file.");
         return;
@@ -38,7 +37,7 @@ function Generate_image() {
     const distanceValue = Check_input($("#distance_input").val());
 
     if (sizeValue === null || distanceValue === null) {
-        alert("Please enter valid numeric values between -30 and 30.");
+        alert("Please enter valid numeric values between -50 and 50.");
         return;
     }
     if (sizeValue < 0 ) {
@@ -57,10 +56,6 @@ function Generate_image() {
         formData.append("watermark", false);
     }
 
-
-    $(".game_image").attr("src", "./img/gameui.gif");
-    $(".gen_btn").attr("disabled", true);
-
     fetch("https://iq.newjeans.cloud/convert", {
         method: "POST",
         body: formData,
@@ -73,14 +68,33 @@ function Generate_image() {
         })
         .then((blob) => {
             const url = URL.createObjectURL(blob);
-            $(".game_image").attr("src", url);
+            $(".generate_result_img").attr("src", url);
+            $(".img_download").attr('href' , url);
+            $(".img_download").attr('download' , 'IQ_Coded');
         })
         .catch((error) => {
             console.error("Error:", error);
             alert("An error occurred. Please try again.");
         })
         .finally(() => {
-            $(".gen_btn").attr("disabled", false);
+            $(".retry_txt").text("Back");
+            $(".retry_img").attr("src","img/left_green.svg");
+            $(".retry").attr("onclick","retry()");
+            $(".contents_input").css("display", "none");
+            $(".file-name").text("Select Image");
+            $("#imageUpload").removeAttr("disabled");
+            $(".generate_result").css("display", "block");
+
+            $('.after_gen').css('display', 'flex');
         });
 }
 
+function retry(){
+    $(".retry_img").attr("src","img/img_logo.svg");
+    $(".retry").attr("onclick","");
+    $(".retry_txt").text("Art Generator");
+
+    $(".contents_input").css("display", "flex");
+    $(".generate_result").css("display", "none");
+    $('.after_gen').css('display', 'none');
+}

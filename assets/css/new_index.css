@@ -1,6 +1,7 @@
 :root {
     font-family: Montserrat, serif;
-
+    scrollbar-width: none; /* Firefox */
+    font-size: 1.2vw;
 }
 
 html, body {
@@ -12,8 +13,6 @@ html, body {
     color: white;
     scroll-behavior: smooth;
     font-size: 1.2vw;
-
-
 }
 
 .progress_div {
@@ -163,12 +162,13 @@ html, body {
 .nav_icons {
     gap: 1rem;
     margin-right: 2rem;
+
 }
 
-.nav_icon {
-    width: 2rem;
-    cursor: pointer;
+.nav_icons > img {
+    width: 7rem;
 }
+
 
 .connect_button {
     right: 0;
@@ -351,12 +351,9 @@ html, body {
     .nav_icon {
         width: 1.5rem;
         cursor: pointer;
-
-
     }
 
     .nav_icons {
-
         gap: 2.5rem;
         z-index: 99;
         opacity: 0.25;
@@ -496,6 +493,7 @@ html, body {
     }
 
     .img_button > div > img {
+        height: 3.7rem;
         margin: 0;
         padding: 0;
     }
@@ -505,7 +503,14 @@ html, body {
         margin: 0;
         padding: 0;
         color: #989898;
+    }
 
+    .img_download {
+        font-size: 4.5rem;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: #2BD52D;
     }
 
     .img_button_green {
@@ -529,6 +534,7 @@ html, body {
     }
 
     .img_button_green > div > img {
+        height: 3.7rem;
         margin: 0;
         padding: 0;
     }
@@ -601,13 +607,48 @@ html, body {
         gap: 4rem;
     }
 
-    .contents_input {
+    .upload_image {
+        border-radius: 1.5rem;
+
+        display: flex;
         width: 65rem;
         height: 65rem;
+        overflow:scroll;
+        justify-items: center;
+        align-items: center;
         border: 0.1rem solid #252525;
-        border-radius: 1.5rem;
+        scrollbar-width: none; /* Firefox */
+
+    }
+
+    .contents_input {
+        width: 100%;
+
+        align-items: center;
         align-content: center;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .generate_result {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .generate_result_img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .generate_result_txt {
+        letter-spacing: 0.4em;
+        line-height: 98%;
+        font-family: IBMPlexMonoLight, monospace;
+        color: #2BD52D;
     }
 
     .contents_input > img {
@@ -617,11 +658,13 @@ html, body {
         cursor: pointer;
     }
 
-    .contents_input > p {
+    .contents_input > label > a {
+        display: block;
         font-family: Montserrat, monospace;
         color: #252525;
         font-size: 4.5rem;
         margin: 0;
+        cursor: pointer;
     }
 
     .info {
@@ -890,18 +933,19 @@ html, body {
     .ca_div {
         width: 100%;
         background: linear-gradient(rgba(9, 151, 80, 0.1), rgba(4, 173, 66, 0.1));
-      padding-left: 2rem;
+        padding-left: 2rem;
         padding-right: 2rem;
-    box-sizing: border-box;
-        gap:1rem;
+        box-sizing: border-box;
+        gap: 1rem;
     }
 
     .ca_div > p {
         font-size: 1.9rem;
 
     }
-    .about_text{
-        font-family: Montserrat,serif;
+
+    .about_text {
+        font-family: Montserrat, serif;
         transform: translateX(2rem);
         line-height: 1.4;
         font-size: 3rem;
@@ -909,4 +953,5 @@ html, body {
         margin: 0;
         width: 97%;
     }
+
 }

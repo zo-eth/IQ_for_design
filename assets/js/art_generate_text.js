@@ -1,3 +1,6 @@
+document.getElementById("imageUpload_For_Text").addEventListener("change", function () {
+    Generate_image_text()
+});
 async function imgToAsciiArt(imageSrc, fontSize = 10, outputHeight = 300) {
     try {
         const image = await loadImage(imageSrc);
@@ -105,7 +108,7 @@ function Check_input(x) {
 }
 
 
-async function Generate_image_client() {
+async function Generate_image_text() {
     const outputHeight = 800;
     const fileInput = document.getElementById("imageUpload_For_Text");
 
@@ -138,8 +141,7 @@ async function Generate_image_client() {
                 $("#asciiWidth").text(result.width);
                 $(".generate_result_txt").css("font-size", fontsize.toString()+"px");
                 $(".generate_result_txt").text(result.relult);
-
-
+                $(".after_gen").css("display", "flex");
 
 
             }).catch((error) => {

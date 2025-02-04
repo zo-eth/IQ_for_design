@@ -9,17 +9,17 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $("#checkbox_image").change(function(){
-            if($("#checkbox_image").is(":checked")){
-                $(".inscribe_text").css("display","none");
-                $(".upload_image").css("display","block");
+    $(document).ready(function () {
+        $("#checkbox_image").change(function () {
+            if ($("#checkbox_image").is(":checked")) {
+                $(".inscribe_text").css("display", "none");
+                $(".upload_image").css("display", "block");
             }
         });
-        $("#checkbox_text").change(function(){
-            if($("#checkbox_text").is(":checked")){
-                $(".upload_image").css("display","none");
-                $(".inscribe_text").css("display","block");
+        $("#checkbox_text").change(function () {
+            if ($("#checkbox_text").is(":checked")) {
+                $(".upload_image").css("display", "none");
+                $(".inscribe_text").css("display", "block");
             }
         });
     });
@@ -27,43 +27,69 @@
 <div class="upload_image">
     <div class="contents_input">
         <img src="img/img_logo_white.svg">
-        <p>Select Image</p>
-    </div>
 
-    <div class="row_flex space_between center font_manage" style="padding-left: 1rem;padding-right: 1rem">
-        <p class="info" style="font-size: 3.3rem">Font size:</p>
-        <div class="row_flex center">
-            <input type='button'
-                   class="arrow_button left_arrow"
-                   onclick="
+        <label for="imageUpload_For_Text" class="custom-file-upload">
+            <a class="file-name">Select Image</a>
+        </label>
+
+        <input
+                type="file"
+                id="imageUpload_For_Text"
+                accept="image/*"
+                style="display: none"
+        />
+    </div>
+    <div class="generate_result">
+        <pre class="generate_result_txt"></pre>
+    </div>
+    <p id='asciiWidth' style="display: none;"></p>
+</div>
+
+<div class="row_flex space_between center font_manage" style="padding-left: 1rem;padding-right: 1rem">
+    <p class="info" style="font-size: 3.3rem">Font size:</p>
+    <div class="row_flex center">
+        <input type='button'
+               class="arrow_button left_arrow"
+               onclick="
                        const number = parseInt($('.input_number').val());
                        if(number>5)
                        $('.input_number').val(number-1)
                         "
-            />
+        />
 
-            <input type="number" class='input_number' min="5" max="50" value="13" readonly>
+        <input type="number" class='input_number font_input' min="5" max="50" value="13" readonly>
 
-            <input type='button'
-                   class="arrow_button right_arrow"
-                   onclick="
+        <input type='button'
+               class="arrow_button right_arrow"
+               onclick="
                        const number = parseInt($('.input_number').val());
                        if(number<50)
                        $('.input_number').val(number+1)
                         "
-            />
-        </div>
+        />
     </div>
+</div>
 </div>
 <div class="inscribe_text" style="display: none">
     <div class="contents_input">
         <textarea class="type_in"></textarea>
     </div>
 </div>
-<div class="green_button code_in_button" onclick="codeIn()" style="margin-top: 2rem;">
-    <p class="code_in_button_p">Code-In</p>
+
+<div class="after_gen">
+
+    <div class="green_button" onclick="Generate_image_text()"
+         style="margin-top: 5rem;background: #161616; border:  #161616 solid 0.1rem;">
+        <p style="color: #989898">Re-Generate</p>
+    </div>
+
+    <div class="green_button code_in_button" onclick="codeIn()" style="margin-top: 2rem;">
+        <p class="code_in_button_p">Code-In</p>
+    </div>
 </div>
-<div class="progress_div column_flex center "style="margin-top: 2rem;display: none;" >
+
+
+<div class="progress_div column_flex center " style="margin-top: 2rem;display: none;">
 
     <div class="progress">
         <div class="progress-bar">

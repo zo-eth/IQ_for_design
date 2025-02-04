@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe213fff-1ca5-4523-ab97-f5a4d1e6242e" name="Changes" comment="check mark">
-      <change afterPath="$PROJECT_DIR$/assets/html/sections/generate_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/copy_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/img_logo_white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/search_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/share_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/thin_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/thin_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/sections/pages/generate_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/left_green.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/new_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/new_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/sections/check_code.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/sections/check_code.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/html/sections/code_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/sections/code_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html/sections/generate_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/sections/generate_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/html/sections/onchain_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/sections/onchain_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/ascii_logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/check_contract.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/check_contract.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/codeincontract.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/code_in_contract.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/sections/pages/check_section.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/sections/pages/check_section.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/sections/pages/codein_section.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/sections/pages/code_in_section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/code_in_contract.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/code_in_contract.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/codein.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/art_generate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/codein_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/art_generate_text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/sections/codein_init.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +224,7 @@
       <workItem from="1737963987992" duration="896000" />
       <workItem from="1737964891882" duration="59000" />
       <workItem from="1737965102161" duration="3306000" />
-      <workItem from="1738223570012" duration="66664000" />
+      <workItem from="1738223570012" duration="89465000" />
     </task>
     <task id="LOCAL-00001" summary="check mark">
       <option name="closed" value="true" />
